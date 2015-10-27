@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="13A-bP-kzh">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--UDRA View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="UDRA View Controller" customClass="ViewController" customModule="BetterIBExperience" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,134 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vh9-Vc-22F">
+                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="B5y-1Z-ueu"/>
+                                    <constraint firstAttribute="width" constant="150" id="cve-HX-Ym6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vh9-Vc-22F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2dP-st-WZi"/>
+                            <constraint firstItem="Vh9-Vc-22F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T2Q-YZ-jwY"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="UDRA" id="ZXJ-Qf-efW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1054" y="-337"/>
+        </scene>
+        <!--IBInspectable-->
+        <scene sceneID="Cip-Ue-MCe">
+            <objects>
+                <viewController id="XRz-W1-Npj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2QL-Q7-hPK"/>
+                        <viewControllerLayoutGuide type="bottom" id="MPj-cB-II5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="41r-NT-Wxa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yh-S1-Rz0" customClass="IBInspectableView" customModule="BetterIBExperience" customModuleProvider="target">
+                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="VbN-Af-ABD"/>
+                                    <constraint firstAttribute="height" constant="150" id="u0d-G5-o28"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9yh-S1-Rz0" firstAttribute="centerX" secondItem="41r-NT-Wxa" secondAttribute="centerX" id="Jh5-0g-gHh"/>
+                            <constraint firstItem="9yh-S1-Rz0" firstAttribute="centerY" secondItem="41r-NT-Wxa" secondAttribute="centerY" id="uea-Di-2Im"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="IBInspectable" id="k2k-Y0-gB0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uq6-ZV-8s7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="429"/>
+        </scene>
+        <!--IBDesignable-->
+        <scene sceneID="q8u-3r-122">
+            <objects>
+                <viewController id="y2W-nO-3br" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ULG-8w-AeV"/>
+                        <viewControllerLayoutGuide type="bottom" id="ne4-P0-8S5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cj7-Lh-0QL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ylx-2K-CYr" customClass="IBDesignableView" customModule="BetterIBExperience" customModuleProvider="target">
+                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7YI-Ml-8EO"/>
+                                    <constraint firstAttribute="width" constant="150" id="icd-78-Cyo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ylx-2K-CYr" firstAttribute="centerY" secondItem="cj7-Lh-0QL" secondAttribute="centerY" id="My6-xm-jdY"/>
+                            <constraint firstItem="ylx-2K-CYr" firstAttribute="centerX" secondItem="cj7-Lh-0QL" secondAttribute="centerX" id="ePp-oG-9U0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="IBDesignable" id="ZPx-o0-9ii"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuA-TH-zGp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="1216"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ynm-pq-5v2">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="13A-bP-kzh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Whc-s8-eZ3">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="4tz-Dj-qkL"/>
+                        <segue destination="XRz-W1-Npj" kind="relationship" relationship="viewControllers" id="SMN-gW-YZj"/>
+                        <segue destination="y2W-nO-3br" kind="relationship" relationship="viewControllers" id="bnh-n3-a4l"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YVF-8a-L7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240" y="429"/>
         </scene>
     </scenes>
 </document>
